@@ -1,2 +1,26 @@
-<bni-pretest-web-nx-welcome></bni-pretest-web-nx-welcome>
-<router-outlet></router-outlet>
+<div class="shell-container">
+  <div class="sidebar">
+    <h1 class="sidebar-title">Pretest BNI</h1>
+    <ul class="menu">
+      <li class="menu-item">
+        <a routerLink="/" routerLinkActive="active" [ngClass]="{ 'active': isDashboardActive }">Dashboard</a>
+      </li>
+      <li class="menu-item">
+        <a routerLink="/products" routerLinkActive="active" [ngClass]="{ 'active': isProductsActive }">Products</a>
+      </li>
+    </ul>
+  </div>  
+  <div class="main">
+    <header>
+      <h3>Pretest BNI</h3>
+    </header>
+    <div class="main-content">
+      <div class="content">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+    <footer>
+      Made with for Pretest BNI Web Developer
+    </footer>
+  </div>
+</div>

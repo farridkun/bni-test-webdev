@@ -1,0 +1,4 @@
+{
+    "products": "http://localhost:4202",
+    "dashboard": "http://localhost:4201"
+  }
